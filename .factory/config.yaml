@@ -1,0 +1,15 @@
+# tenacity-factory-eval — use case #2 measurement run
+# Target: Azure gpt-4o-for-coding, cost capped at $0.30/run.
+# Credentials resolved from ~/.env.aider via lgfactory.
+# Multi-file refactor: sync + async TryAgain reraise=True (tenacity #544).
+
+target_repo: kaizenmantra/tenacity-factory-eval
+connector: azure
+deployment: gpt-4o-for-coding
+pricing:
+  input_per_token: 0.000005
+  output_per_token: 0.000015
+cost_cap_usd: 0.30
+max_output_tokens: 4000
+max_repair_attempts_per_class: 2
+plugins_dir: plugins

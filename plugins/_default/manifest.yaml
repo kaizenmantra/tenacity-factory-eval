@@ -1,0 +1,5 @@
+name: _default
+slots_filled:
+  - generation
+  - repair
+  - verification

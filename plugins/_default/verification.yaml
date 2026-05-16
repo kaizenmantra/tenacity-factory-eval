@@ -1,0 +1,5 @@
+validators:
+  - name: pytest
+    command: [python, -m, pytest, "-q", "tests/"]
+    expected_exit: 0
+    timeout_s: 120
